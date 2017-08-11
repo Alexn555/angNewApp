@@ -22,6 +22,14 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
+	{ 
+	  pattern: 'node_modules/@angular/!(compiler-cli|tsc-wrapped)/**/*.js', 
+	  included: false, watched: true 
+	},
+    { 
+	  pattern: 'node_modules/@angular/!(compiler-cli|tsc-wrapped)/**/*.js.map', 
+      included: false, watched: true
+	},
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
