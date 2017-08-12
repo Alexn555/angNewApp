@@ -12,8 +12,8 @@ import { PageNotFoundComponent } from './core/page_not_found/page-not-found';
 
 const routes: Routes = [
     { path: '', redirectTo: 'heroes', pathMatch: 'full' },
-	{ path: 'newcmp', component: NewcmpComponent },
-	{ path: 'hero/:id', component: HeroDetailComponent },
+	  { path: 'newcmp', component: NewcmpComponent },
+	  { path: 'hero/:id', component: HeroDetailComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'games', component: GamesComponent },
     { path: 'game/:id', component: GameDetailComponent },
