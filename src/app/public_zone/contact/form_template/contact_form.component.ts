@@ -38,7 +38,7 @@ import {
                          </div>
                            
                           <div class="form-group">
-                             <select [(ngModel)]="cntform.country" name="countries" (ngModelChange)="onCountryChange($event)" >
+                             <select [(ngModel)]="cntform.country" name="countries" (ngModelChange)="onCountryChange($event)" class="form-control">
                                 <option *ngFor="let c of countries" [ngValue]="c.name">
                                  {{c.name}}
                                  </option>
